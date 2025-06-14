@@ -1,0 +1,24 @@
+2025-06-14 12:11:22,663 - INFO - Starting Flask application
+2025-06-14 12:11:22,713 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.20.6:8000
+2025-06-14 12:11:22,716 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-14 12:11:22,739 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-14 12:11:25,256 - INFO - Starting Flask application
+2025-06-14 12:11:25,272 - WARNING -  * Debugger is active!
+2025-06-14 12:11:25,275 - INFO -  * Debugger PIN: 111-729-612
+2025-06-14 12:11:44,197 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-14 12:11:44,363 - INFO - Received question: What is the main topic of the document?
+2025-06-14 12:12:04,117 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-14 12:12:04,117 - INFO - Loading faiss with AVX2 support.
+2025-06-14 12:12:06,743 - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-14 12:12:07,206 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-14 12:12:31,003 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-14 12:12:40,353 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-14 12:12:40,683 - INFO - Received question: What is the main topic of the document?
+2025-06-14 12:13:09,232 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-14 12:13:09,657 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-14 12:13:28,044 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-14 12:13:54,609 - INFO - Analysis completed successfully
+2025-06-14 12:13:54,613 - INFO - 127.0.0.1 - - [14/Jun/2025 12:13:54] "POST /analyse HTTP/1.1" 200 -
