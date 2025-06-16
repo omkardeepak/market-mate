@@ -18,7 +18,7 @@ export default function PdfAnalyzer() {
   const [prompt, setPrompt] = useState("")
   const [isAnalyzing, setIsAnalyzing] = useState(false)
   const [isAnalyzingprompt, setIsAnalyzingprompt] = useState(false)
-  const [result, setResult] = useState<string | null>(null)
+  const [answer, setAnswer] = useState<string | null>(null)
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const selectedFile = e.target.files?.[0]
@@ -76,7 +76,9 @@ export default function PdfAnalyzer() {
     });
 
     const result = await response.json();
-    console.log(result);
+    const answer=result.answer;
+    setAnswer(answer)
+    console.log(answer);
     // Use result.answer or result.content as needed
   } catch (error) {
     console.error("Error analyzing PDF:", error);
@@ -90,7 +92,7 @@ export default function PdfAnalyzer() {
     <div className="flex min-h-screen flex-col text-white bg-gradient-to-bl from-neutral-950 to bg-green-800">
     <Navbar></Navbar>
       <div className="container mx-auto py-12 px-4">
-        <h1 className="text-3xl font-bold text-center mb-8 text-white">PDF Report Analyzer</h1>    <Card className="max-w-3xl mx-auto p-6 bg-white shadow-md rounded-lg">
+        <h1 className="text-3xl font-bold text-center mb-8 text-white">Company Report Analyzer</h1>    <Card className="max-w-3xl mx-auto p-6 bg-white shadow-md rounded-lg">
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* PDF Upload Section */}
         <div className="space-y-2">
@@ -118,7 +120,7 @@ export default function PdfAnalyzer() {
             ) : (
               <div className="flex flex-1 items-center justify-between rounded-md border bg-gray-50 px-4 py-3">
                 <div className="flex items-center">
-                  <FileText className="mr-2 h-6 w-6 text-blue-500" />
+                  <FileText className="mr-2 h-6 w-6 text-yellow-700" />
                   <div>
                     <span className="text-sm font-medium block">{file.name}</span>
                     <span className="text-xs text-gray-500">
@@ -172,7 +174,7 @@ export default function PdfAnalyzer() {
         </div>
         <Button
           type="submit"
-          className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium"
+          className="w-full py-2 bg-amber-600 hover:bg-amber-700 text-white font-medium"
           disabled={!prompt || isAnalyzingprompt}
         >
           {isAnalyzingprompt ? (
@@ -186,12 +188,11 @@ export default function PdfAnalyzer() {
         </Button>
       </form>
 
-      {/* Results Section */}
-      {result && (
+      {answer && (
         <div className="mt-8 space-y-4">
           <h2 className="text-xl font-semibold border-b pb-2">Analysis Results</h2>
           <div className="bg-gray-50 p-4 rounded-md border">
-            <p className="text-gray-800 whitespace-pre-line">{result}</p>
+            <p className="text-gray-800 text-sm  whitespace-pre-line">{answer}</p>
           </div>
         </div>
       )}

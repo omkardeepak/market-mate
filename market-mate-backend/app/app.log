@@ -321,3 +321,246 @@ Here are the projects listed under the provided context:
 2025-06-16 12:46:05,373 - INFO - Received question: what are the projects
 2025-06-16 12:46:05,373 - ERROR - Error during analysis: 'RAGPipeline' object has no attribute 'vector_store'
 2025-06-16 12:46:05,373 - INFO - 127.0.0.1 - - [16/Jun/2025 12:46:05] "[35m[1mPOST /prompt HTTP/1.1[0m" 500 -
+2025-06-16 21:11:34,007 - INFO - Starting Flask application
+2025-06-16 21:11:34,075 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.20.8:8000
+2025-06-16 21:11:34,077 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-16 21:11:34,077 - INFO -  * Restarting with stat
+2025-06-16 21:11:37,292 - INFO - Starting Flask application
+2025-06-16 21:11:37,317 - WARNING -  * Debugger is active!
+2025-06-16 21:11:37,327 - INFO -  * Debugger PIN: 120-461-364
+2025-06-16 21:18:07,677 - INFO - Received question: Summarise the resume
+2025-06-16 21:18:07,682 - ERROR - Error during analysis: 'RAGPipeline' object has no attribute 'vector_store'
+2025-06-16 21:18:07,737 - INFO - 127.0.0.1 - - [16/Jun/2025 21:18:07] "[35m[1mPOST /prompt HTTP/1.1[0m" 500 -
+2025-06-16 21:18:09,438 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-16 21:18:42,583 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 21:18:42,600 - INFO - Loading faiss with AVX2 support.
+2025-06-16 21:18:42,705 - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-16 21:18:42,720 - INFO - Analysis completed successfully
+2025-06-16 21:18:42,720 - INFO - 127.0.0.1 - - [16/Jun/2025 21:18:42] "POST /analyse HTTP/1.1" 200 -
+2025-06-16 21:18:51,787 - INFO - Received question: Summarise the resume
+2025-06-16 21:18:52,217 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 21:19:21,518 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-16 21:20:01,712 - INFO - Analysis completed successfully
+2025-06-16 21:20:01,712 - INFO - <think>
+Alright, I need to summarize the resume provided. Let me start by looking at each section of the context given.
+
+First, there's the LinkedIn and GitHub links, which are probably part of the cover letter or portfolio but aren't directly in the resume itself. Then, under Work Experience, there's a YETI RACING position starting from December 2024. I see they used Next.js for the website and Tailwind CSS to style it. That seems like their technical skills.
+
+Next is an academic project called AI-based Health Diagnose, which they implemented using Jupyter and Hugging Face. They trained a model using NLP, so that's a strong technical skill in AI and data science. Then there's ZUHI – AI Powered Admission Assistant, where they developed an AI system with Hume API and Gemini. This involved conversational AI and smart form generation, which shows their ability to build user-friendly tools.
+
+Under Education, they have a B.Tech in IT from Cochin University of Science and Technology starting May 2023 to May 2027. Their thesis was on cross-device compatibility with null class, ensuring no loss in quality or performance. This is technical and shows their expertise in backend development and user experience.
+
+Looking at the context, the only part that says "Answer:" seems out of place because it doesn't belong in a resume. So I should just list all the information given without using markdown.
+</think>
+
+OMKAR DEEPAK's resume includes:
+
+- Work Experience:
+  - YETI Racing (2024-Present): Developed an online presence, used Next.js and Tailwind CSS for styling, designed user interfaces with Figma, trained a health diagnose AI model.
+
+- Academic Projects:
+  - AI-based Health Diagnose: Implemented NLP models, developed conversational AI tools.
+  - ZUHI – AI Powered Admission Assistant: Built a smart form generator using Hume API and TTS.
+
+- Education:
+  - B.Tech in IT (2023-2027): Worked on cross-device compatibility with null class.
+
+I don't have information to summarize this into a single sentence.
+2025-06-16 21:20:01,712 - INFO - 127.0.0.1 - - [16/Jun/2025 21:20:01] "POST /prompt HTTP/1.1" 200 -
+2025-06-16 21:31:41,467 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-16 21:32:14,955 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 21:32:15,016 - INFO - Analysis completed successfully
+2025-06-16 21:32:15,034 - INFO - 127.0.0.1 - - [16/Jun/2025 21:32:15] "POST /analyse HTTP/1.1" 200 -
+2025-06-16 21:54:37,392 - INFO - Received question: Summarise the resume
+2025-06-16 21:54:41,523 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 21:55:10,533 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-16 21:56:05,570 - INFO - Analysis completed successfully
+2025-06-16 21:56:05,571 - INFO - <think>
+Okay, so I'm trying to help answer this question about summarizing an resume. The context provided includes the person's LinkedIn profile, email, job experience, academic projects, and education details.
+
+First, I need to understand what exactly is being asked here. The user has given me a specific question: "Summarize the resume." So, they're probably looking for a summary of their resume on this platform or in some other context.
+
+Looking at the context provided, it seems like there's more than one section—LinkedIn, GitHub, email, and then job experience, academic projects, and education. But since the user is asking about summarizing the resume, I should focus on that part. The context includes their LinkedIn profile but not a traditional resume itself.
+
+Wait, maybe the "resume" here refers to an academic or professional summary? Let me check the context again. Oh, right! There's a job experience section where they describe their work as a web developer and designer for YETI Racing in Kochi, India. They created a website using Next.js, Figma, Tailwind CSS, Hugging Face, etc., implemented a crowdfunding feature.
+
+So, to summarize the resume, I should take that detailed job experience summary and condense it into a brief overview, highlighting their key skills, projects, roles, and achievements. I'll need to make sure I include any relevant details from their academic background as well, but since the user didn't mention an academic section in their question, I might focus just on their professional experiences here.
+
+I also notice that they're using platforms like LinkedIn for job experience, GitHub for code, email addresses, and Nullclass for a web development internship. Maybe these are extra info not directly related to the resume summary, but perhaps part of their full profile. But since the user specifically asked about summarizing the resume, I should stick to the professional section.
+
+So, putting it all together, my response should be a concise overview that includes their work experience in developing a website with various frameworks and integrating crowdfunding features. That's the main summary they needed.
+</think>
+
+The resume summary provided highlights OMKAR DEEPAK's professional experience as a web developer and designer for YETI Racing, focusing on creating an appealing online presence. Their skills include using Next.js, Figma, Tailwind CSS, Hugging Face, and implementing a crowdfunding feature. They also have academic projects in AI-based health diagnosis and an internet engineering background. The summary emphasizes their experience developing a professional website and integrating additional features.
+
+**Answer:**
+
+OMKAR DEEPAK has extensive experience as a web developer and designer for YETI Racing, where they created an online presence using Next.js, Figma, Tailwind CSS, Hugging Face, and integrated a crowdfunding feature. Their skills include developing user-friendly interfaces, styling websites with Tailwind CSS, implementing robust features like a chat system, and integrating machine learning models in Jupyter and Hugging Face. OMKAR also has an academic background in AI-based health diagnosis and internet engineering.
+2025-06-16 21:56:05,582 - INFO - 127.0.0.1 - - [16/Jun/2025 21:56:05] "POST /prompt HTTP/1.1" 200 -
+2025-06-16 22:28:10,137 - INFO -  * Detected change in 'D:\\3rd year\\market-mate\\market-mate-backend\\app\\main.py', reloading
+2025-06-16 22:28:10,903 - INFO -  * Restarting with stat
+2025-06-16 22:28:14,874 - INFO - Starting Flask application
+2025-06-16 22:28:14,929 - WARNING -  * Debugger is active!
+2025-06-16 22:28:14,937 - INFO -  * Debugger PIN: 120-461-364
+2025-06-16 22:28:59,998 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-16 22:29:30,195 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 22:29:30,203 - INFO - Loading faiss with AVX2 support.
+2025-06-16 22:29:30,302 - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-16 22:29:30,314 - INFO - Analysis completed successfully
+2025-06-16 22:29:30,316 - INFO - 127.0.0.1 - - [16/Jun/2025 22:29:30] "POST /analyse HTTP/1.1" 200 -
+2025-06-16 22:30:32,569 - INFO - Received question: Summarise the resume
+2025-06-16 22:30:32,962 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 22:31:01,176 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-16 22:32:01,253 - INFO - Analysis completed successfully
+2025-06-16 22:32:01,256 - INFO - <think>
+Okay, I need to summarize the resume provided. Let me look through all the sections.
+
+First, LinkedIn, GitHub, email address, and social media are the contact information. That's straightforward, so that's about it.
+
+Next, work experience starts with YETI RACING. They worked as a web developer and designer from December 2024 to present. So I should mention the company name clearly, maybe bolding it for emphasis in the summary.
+
+They used Next.js for the website, which is awesome because I know Next.js is popular for frontend development. Tailwind CSS was implemented too, so that's a good point about styling and responsiveness. Figma was their design tool, and they styled each page with Tailwind. They also included a crowdfunding feature, which shows they're involved in community building.
+
+Moving on to academic projects: AI-based health diagnosis using Jupyter and Hugging Face for NLP. That seems technical but important. Then ZUHI, another AI project integrating Hume API and Gemini for admissions. They used LLMs like GPT-4 or 3 for predictions. The smart form generator is a good one too.
+
+Education: B. Tech in IT from COSTEC, Kochi, May 2023 to June 2027. Their backend was integrated with funding progress tracking, which shows attention to scale and performance. They ensured cross-device compatibility by testing thoroughly, which is a quality aspect. Cross-platform functionality is key for any tech career.
+
+Web development experience at Nullclass from May 2024 to June 2024: using React and Node.js. They built a job posting website with reusable components and state management. Integration of OAuth and Firebase shows secure login methods, which are important nowadays.
+
+So I need to condense all this into a summary without the details. Make sure each section is clear but brief.
+</think>
+
+OMKAR DEEPAK
+
+**LinkedIn | GitHub**
+
+- omkardeepak444@gmail.com  
+- YETI RACING [CUSAT] Kochi, India  
+  - December 2024-Present: Worked as a web developer and designer for YETI Racing, creating an online presence.  
+  - Used Next.js for the website, Tailwind CSS for styling, Figma for design, Jupyter and Hugging Face for AI-based health diagnosis.  
+- ACADEMIC PROJECTS  
+  - AI-based Health Diagnose: Built an AI model using Jupyter and Hugging Face with NLP.  
+    - Trained on symptoms, created conversational AI for admission assistance.  
+    - Developed a smart form generator using React and Node.js.  
+  - ZUHI – AI Powered Admission Assistant: Integrated Hume API and Gemini for seamless admissions process.  
+    - Designed user-friendly interfaces with LLMs and explored secure authentication methods like OAuth and Firebase.  
+- EDUCATION  
+  - B. Tech in Information Technology, COSTEC Kochi, India, May 2023-May 2027: Integrated backend tracking with funding progress and goal-setting.  
+    - Ensured cross-device compatibility by thoroughly testing across platforms.  
+
+This summary captures the key points from the resume, emphasizing technical skills, work experience, academic projects, and education in a clear and concise manner.
+2025-06-16 22:32:01,335 - INFO - 127.0.0.1 - - [16/Jun/2025 22:32:01] "[35m[1mPOST /prompt HTTP/1.1[0m" 500 -
+2025-06-16 22:37:29,197 - INFO -  * Detected change in 'D:\\3rd year\\market-mate\\market-mate-backend\\app\\main.py', reloading
+2025-06-16 22:37:29,640 - INFO -  * Restarting with stat
+2025-06-16 22:37:33,823 - INFO - Starting Flask application
+2025-06-16 22:37:33,864 - WARNING -  * Debugger is active!
+2025-06-16 22:37:33,868 - INFO -  * Debugger PIN: 120-461-364
+2025-06-16 22:37:43,730 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-16 22:38:15,459 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 22:38:15,461 - INFO - Loading faiss with AVX2 support.
+2025-06-16 22:38:15,583 - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-16 22:38:15,596 - INFO - Analysis completed successfully
+2025-06-16 22:38:15,596 - INFO - 127.0.0.1 - - [16/Jun/2025 22:38:15] "POST /analyse HTTP/1.1" 200 -
+2025-06-16 22:39:14,349 - INFO - Received question: Summarise the resume
+2025-06-16 22:39:14,800 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 22:39:43,544 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-16 22:40:38,182 - INFO - Analysis completed successfully
+2025-06-16 22:40:38,182 - INFO - <think>
+Okay, I need to summarize the resume provided. Let me look through each section one by one.
+
+Starting with LinkedIn details: Omkar Deepak is on LinkedIn and GitHub. Their email address is omkardeepak444@gmail.com. That's straightforward.
+
+Next, Work Experience section starts at Kochi, India. They worked as a web developer and designer for YETI Racing. The job was at Kochi's Cusat college from December 2024 until now. I should note their role as a web developer, using Next.js for the website, Figma for interface design, Tailwind CSS styling, Jupyter for Hugging Face models, and Hume API with Gemini. They also integrated TTS and lightweight NLP models.
+
+Moving to Academic Projects: AI-based Health Diagnose in ZUHI. They used Jupyter and Hugging Face, implemented natural language processing. Then, another project using Hume API, Gemini, Hugging Face, Octave TTS, and lightweight NLP models with web development.
+
+Education is from Kochi University, B. Tech Information Technology, June 2023 to May 2027.
+
+Lastly, Nullclass Web Developer Intern from May 2024 to June 2024.
+
+I need to condense all this information into a concise resume.
+</think>
+
+**OMKAR DEEPAK**
+
+**LinkedIn**: omkardeepak444@gmail.com  
+**GitHub**: omkardeepak444.github.io  
+**Email Address**: omkardeepak444@gmail.com  
+
+**Work Experience**  
+- **YETI Racing** (Cusat, Kochi, India)  
+  - Role: Web Developer and Designer  
+    - Website Development using Next.js with Figma for interface design  
+    - Tailwind CSS styling for SEO and responsiveness  
+    - Jupyter/Hugging Face models for AI health diagnosis  
+    - Hume API integration for TTS and NLP models  
+    - Job at Kochi Cusat College from December 2024 onwards  
+
+**Academic Projects**  
+- **AI-based Health Diagnose**  
+  - ZUHI (AI-Powered Admission Assistant)  
+    - Jupyter/Hugging Face models for predictions  
+    - Hume API, Gemini, and TTS integration  
+    - Smart form generation system  
+  - NULL CLASS Remote (Web Developer Intern)  
+    - React frontend development with restful APIs  
+    - Node.js Express backend server  
+    - OAuth authentication and Firebase for secure login  
+
+**Education**  
+- ** Kochi University of Science and Technology**  
+  - B. Tech in Information Technology  
+    - June 2023 – May 2027  
+    - Cross-device compatibility testing
+2025-06-16 22:40:38,182 - INFO - 127.0.0.1 - - [16/Jun/2025 22:40:38] "POST /prompt HTTP/1.1" 200 -
+2025-06-16 22:42:42,812 - INFO - Received question: Summarise the resume
+2025-06-16 22:42:43,312 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 22:43:13,171 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-16 22:43:49,777 - INFO - Analysis completed successfully
+2025-06-16 22:43:49,777 - INFO - <think>
+Okay, so I need to summarize the resume of Omkar Deepak based on the provided context. Let me go through each section one by one.
+
+First, the LinkedIn and GitHub links are straightforward—they're his social media profiles. Then there's a phone number he has listed. His work experience is split into two parts: YETI Racing as a web developer and Figma designer, with some specific tasks like designing interfaces and styling the website using Tailwind CSS. He also mentions implementing a crowdfunding feature, though that might be less detailed.
+
+Next, his academic projects include AI-based health diagnosis and an AI-powered admission assistant project. In each of these, he built models using Jupyter and Hugging Face, implemented NLP for queries, and designed form generators.
+
+His education is from Cochin University of Science and Technology with a B.Tech in Information Technology, starting June 2023 and ending May 2027. There's some cross-device compatibility testing mentioned but it's more about the job role than his resume content.
+
+Now, summarizing this into a professional summary would include his experience across both work and academic projects, highlighting key achievements like designing user interfaces, building models, and developing forms. It should be concise yet informative, showing he has hands-on experience in web development, AI applications, and academic projects.
+</think>
+
+Omkar Deepak is a dedicated professional with expertise in web development, artificial intelligence (AI), and educational projects. He has worked as a web developer designing user-friendly interfaces using Figma and Tailwind CSS for platforms like YETI Racing. His academic work includes building AI-based health diagnosis tools and an admission assistant system. He also interned at Nullclass, developing a job posting website. His resume showcases experience in both professional and academic roles, emphasizing skills in web design, AI application development, and form generation.
+
+Answer: Omkar Deepak is a skilled professional with extensive experience across both work and academic projects. He has built user-friendly interfaces using Figma and Tailwind CSS, developed robust AI-based health diagnose tools, and created job forms for admissions. His resume highlights his technical skills in web development, AI applications, and form generation.
+2025-06-16 22:43:49,777 - INFO - 127.0.0.1 - - [16/Jun/2025 22:43:49] "POST /prompt HTTP/1.1" 200 -
+2025-06-16 22:44:58,478 - INFO -  * Detected change in 'D:\\3rd year\\market-mate\\market-mate-backend\\app\\main.py', reloading
+2025-06-16 22:44:58,970 - INFO -  * Restarting with stat
+2025-06-16 22:45:04,429 - INFO - Starting Flask application
+2025-06-16 22:45:04,484 - WARNING -  * Debugger is active!
+2025-06-16 22:45:04,490 - INFO -  * Debugger PIN: 120-461-364
+2025-06-16 22:45:51,506 - INFO -  * Detected change in 'D:\\3rd year\\market-mate\\market-mate-backend\\app\\main.py', reloading
+2025-06-16 22:45:51,735 - INFO -  * Restarting with stat
+2025-06-16 22:45:55,678 - INFO - Starting Flask application
+2025-06-16 22:45:55,720 - WARNING -  * Debugger is active!
+2025-06-16 22:45:55,720 - INFO -  * Debugger PIN: 120-461-364
+2025-06-16 22:45:55,873 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-16 22:46:22,934 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-16 22:46:23,932 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 22:46:24,130 - INFO - Loading faiss with AVX2 support.
+2025-06-16 22:46:24,210 - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-16 22:46:24,234 - INFO - Analysis completed successfully
+2025-06-16 22:46:24,236 - INFO - 127.0.0.1 - - [16/Jun/2025 22:46:24] "POST /analyse HTTP/1.1" 200 -
+2025-06-16 22:46:50,467 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 22:46:50,470 - INFO - Analysis completed successfully
+2025-06-16 22:46:50,471 - INFO - 127.0.0.1 - - [16/Jun/2025 22:46:50] "POST /analyse HTTP/1.1" 200 -
+2025-06-16 22:47:04,343 - INFO - Received question: Summarise the resume
+2025-06-16 22:47:04,757 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 22:47:31,323 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-16 22:48:49,071 - INFO - Analysis completed successfully
+2025-06-16 22:48:49,071 - INFO - Analysis completed successfully
+2025-06-16 22:48:49,073 - INFO - 127.0.0.1 - - [16/Jun/2025 22:48:49] "POST /prompt HTTP/1.1" 200 -
+2025-06-16 22:50:18,650 - INFO -  * Detected change in 'D:\\3rd year\\market-mate\\market-mate-backend\\app\\main.py', reloading
+2025-06-16 22:50:18,905 - INFO -  * Restarting with stat
