@@ -42,13 +42,35 @@ def analyse():
             return jsonify({"error": "No text could be extracted from the PDF"}), 400
 
         # Get the question from the request (default if not provided)
-        question = request.form.get('question', 'What is the main topic of the document?')
+        # question = request.form.get('prompt', 'What is the main topic of the document?')
+        # logging.info(f"Received question: {question}")
+
+        # Process the text and get the answer using RAG
+        rag_pipeline.process_document(text)
+
+        logging.info("Analysis completed successfully")
+        return  jsonify({"done":"analysis done"})
+
+    except Exception as e:
+        logging.error(f"Error during analysis: {str(e)}")
+        return jsonify({"error": f"An error occurred: {str(e)}"}), 500
+
+
+
+
+
+@app.route('/prompt', methods=['POST'])
+def prompt():
+    try:
+        question = request.form.get('prompt', 'What is the main topic of the document?')
         logging.info(f"Received question: {question}")
 
         # Process the text and get the answer using RAG
-        answer, context = rag_pipeline.process_document(text, question)
+        answer,context=rag_pipeline.process_prompt(question)
 
         logging.info("Analysis completed successfully")
+        logging.info(answer)
+
         return jsonify({
             "question": question,
             "answer": answer,
@@ -58,6 +80,7 @@ def analyse():
     except Exception as e:
         logging.error(f"Error during analysis: {str(e)}")
         return jsonify({"error": f"An error occurred: {str(e)}"}), 500
+
 
 if __name__ == "__main__":
     logging.info("Starting Flask application")

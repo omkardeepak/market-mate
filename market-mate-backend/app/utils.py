@@ -3,10 +3,7 @@ import pdfplumber
 def extract_text_from_pdf(pdf_file):
     """
     Extract text from a PDF file using pdfplumber.
-    
-    Args:
-        pdf_file: The uploaded PDF file object.
-    
+    pdf_file: The uploaded PDF file object.
     Returns:
         str: The extracted text.
     """

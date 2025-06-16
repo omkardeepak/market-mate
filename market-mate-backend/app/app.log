@@ -22,3 +22,209 @@
 2025-06-14 12:13:28,044 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
 2025-06-14 12:13:54,609 - INFO - Analysis completed successfully
 2025-06-14 12:13:54,613 - INFO - 127.0.0.1 - - [14/Jun/2025 12:13:54] "POST /analyse HTTP/1.1" 200 -
+2025-06-14 12:19:37,223 - INFO - Starting Flask application
+2025-06-14 12:19:37,262 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.20.6:8000
+2025-06-14 12:19:37,262 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-14 12:19:37,262 - INFO -  * Restarting with stat
+2025-06-14 12:19:39,221 - INFO - Starting Flask application
+2025-06-14 12:19:39,239 - WARNING -  * Debugger is active!
+2025-06-14 12:19:39,241 - INFO -  * Debugger PIN: 120-461-364
+2025-06-14 12:20:09,011 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-14 12:20:09,210 - INFO - Received question: What is the main topic of the document?
+2025-06-14 12:20:35,527 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-14 12:20:35,530 - INFO - Loading faiss with AVX2 support.
+2025-06-14 12:20:37,408 - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-14 12:20:38,001 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-14 12:20:56,907 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-14 12:21:11,477 - INFO - Analysis completed successfully
+2025-06-14 12:21:11,479 - INFO - 127.0.0.1 - - [14/Jun/2025 12:21:11] "POST /analyse HTTP/1.1" 200 -
+2025-06-15 15:49:18,838 - INFO - Starting Flask application
+2025-06-15 15:49:18,891 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.20.3:8000
+2025-06-15 15:49:18,891 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-15 15:49:18,891 - INFO -  * Restarting with stat
+2025-06-15 15:49:20,881 - INFO - Starting Flask application
+2025-06-15 15:49:20,897 - WARNING -  * Debugger is active!
+2025-06-15 15:49:20,903 - INFO -  * Debugger PIN: 120-461-364
+2025-06-15 16:03:56,859 - INFO -  * Detected change in 'D:\\3rd year\\market-mate\\market-mate-backend\\app\\main.py', reloading
+2025-06-15 16:03:57,039 - INFO -  * Restarting with stat
+2025-06-15 16:03:59,598 - INFO - Starting Flask application
+2025-06-15 16:03:59,621 - WARNING -  * Debugger is active!
+2025-06-15 16:03:59,621 - INFO -  * Debugger PIN: 120-461-364
+2025-06-15 16:04:38,670 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-15 16:04:39,279 - INFO - Received question: What is the main topic of the document?
+2025-06-15 16:04:39,281 - INFO - form data ImmutableMultiDict([('prompt', 'Summarise the resume')])
+2025-06-15 16:05:00,216 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-15 16:05:00,224 - INFO - Loading faiss with AVX2 support.
+2025-06-15 16:05:00,305 - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-15 16:05:00,656 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-15 16:05:13,235 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-15 16:05:41,477 - INFO - Analysis completed successfully
+2025-06-15 16:05:41,477 - INFO - 127.0.0.1 - - [15/Jun/2025 16:05:41] "POST /analyse HTTP/1.1" 200 -
+2025-06-15 16:11:29,617 - INFO -  * Detected change in 'D:\\3rd year\\market-mate\\market-mate-backend\\app\\main.py', reloading
+2025-06-15 16:11:29,862 - INFO -  * Restarting with stat
+2025-06-15 16:11:32,705 - INFO - Starting Flask application
+2025-06-15 16:11:32,742 - WARNING -  * Debugger is active!
+2025-06-15 16:11:32,745 - INFO -  * Debugger PIN: 120-461-364
+2025-06-15 16:11:33,833 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-15 16:11:34,049 - INFO - Received question: Summarise the resume
+2025-06-15 16:11:34,049 - INFO - form data ImmutableMultiDict([('prompt', 'Summarise the resume')])
+2025-06-15 16:11:52,435 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-15 16:11:52,442 - INFO - Loading faiss with AVX2 support.
+2025-06-15 16:11:52,520 - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-15 16:11:52,771 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-15 16:12:06,574 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-15 16:12:52,925 - INFO - Analysis completed successfully
+2025-06-15 16:12:52,925 - INFO - 127.0.0.1 - - [15/Jun/2025 16:12:52] "POST /analyse HTTP/1.1" 200 -
+2025-06-15 20:35:00,474 - INFO -  * Detected change in 'D:\\3rd year\\market-mate\\market-mate-backend\\app\\utils.py', reloading
+2025-06-15 20:35:01,102 - INFO -  * Restarting with stat
+2025-06-15 20:35:05,707 - INFO - Starting Flask application
+2025-06-15 20:35:05,761 - WARNING -  * Debugger is active!
+2025-06-15 20:35:05,766 - INFO -  * Debugger PIN: 120-461-364
+2025-06-15 20:52:18,719 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-15 20:52:19,333 - INFO - Received question: Summarise the resume
+2025-06-15 20:52:19,333 - INFO - form data ImmutableMultiDict([('prompt', 'Summarise the resume')])
+2025-06-15 20:52:52,024 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-15 20:52:52,036 - INFO - Loading faiss with AVX2 support.
+2025-06-15 20:52:52,154 - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-15 20:52:52,663 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-15 20:53:19,189 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-15 20:54:12,376 - INFO - Analysis completed successfully
+2025-06-15 20:54:12,379 - INFO - 127.0.0.1 - - [15/Jun/2025 20:54:12] "POST /analyse HTTP/1.1" 200 -
+2025-06-15 21:38:35,856 - INFO -  * Detected change in 'D:\\3rd year\\market-mate\\market-mate-backend\\app\\rag.py', reloading
+2025-06-15 21:38:36,393 - INFO -  * Restarting with stat
+2025-06-15 21:38:40,883 - INFO - Starting Flask application
+2025-06-15 21:38:40,930 - WARNING -  * Debugger is active!
+2025-06-15 21:38:40,938 - INFO -  * Debugger PIN: 120-461-364
+2025-06-16 11:03:36,304 - INFO - Starting Flask application
+2025-06-16 11:03:36,371 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.20.7:8000
+2025-06-16 11:03:36,371 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-16 11:03:36,371 - INFO -  * Restarting with stat
+2025-06-16 11:03:39,644 - INFO - Starting Flask application
+2025-06-16 11:03:39,699 - WARNING -  * Debugger is active!
+2025-06-16 11:03:39,705 - INFO -  * Debugger PIN: 120-461-364
+2025-06-16 11:05:09,912 - INFO - Starting Flask application
+2025-06-16 11:05:09,967 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.20.7:8000
+2025-06-16 11:05:09,969 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-16 11:05:09,969 - INFO -  * Restarting with stat
+2025-06-16 11:05:12,970 - INFO - Starting Flask application
+2025-06-16 11:05:13,012 - WARNING -  * Debugger is active!
+2025-06-16 11:05:13,015 - INFO -  * Debugger PIN: 120-461-364
+2025-06-16 11:06:28,189 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-16 11:06:28,714 - INFO - Received question: Summarise the resume
+2025-06-16 11:06:28,714 - ERROR - Error during analysis: RAGPipeline.process_document() takes 2 positional arguments but 3 were given
+2025-06-16 11:06:28,714 - INFO - 127.0.0.1 - - [16/Jun/2025 11:06:28] "[35m[1mPOST /analyse HTTP/1.1[0m" 500 -
+2025-06-16 11:08:55,934 - INFO -  * Detected change in 'D:\\3rd year\\market-mate\\market-mate-backend\\app\\main.py', reloading
+2025-06-16 11:08:56,176 - INFO -  * Restarting with stat
+2025-06-16 11:09:00,328 - INFO - Starting Flask application
+2025-06-16 11:09:00,372 - WARNING -  * Debugger is active!
+2025-06-16 11:09:00,379 - INFO -  * Debugger PIN: 120-461-364
+2025-06-16 11:09:04,256 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-16 11:09:04,833 - INFO - Received question: Summarise the resume
+2025-06-16 11:09:34,471 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 11:09:34,482 - INFO - Loading faiss with AVX2 support.
+2025-06-16 11:09:34,630 - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-16 11:09:34,655 - ERROR - Error during analysis: cannot unpack non-iterable NoneType object
+2025-06-16 11:09:34,655 - INFO - 127.0.0.1 - - [16/Jun/2025 11:09:34] "[35m[1mPOST /analyse HTTP/1.1[0m" 500 -
+2025-06-16 11:20:26,139 - INFO -  * Detected change in 'D:\\3rd year\\market-mate\\market-mate-backend\\app\\main.py', reloading
+2025-06-16 11:20:26,503 - INFO -  * Restarting with stat
+2025-06-16 12:08:54,780 - INFO - Starting Flask application
+2025-06-16 12:08:54,878 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.20.7:8000
+2025-06-16 12:08:54,878 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-16 12:08:54,882 - INFO -  * Restarting with stat
+2025-06-16 12:08:58,058 - INFO - Starting Flask application
+2025-06-16 12:08:58,097 - WARNING -  * Debugger is active!
+2025-06-16 12:08:58,097 - INFO -  * Debugger PIN: 120-461-364
+2025-06-16 12:09:29,142 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-16 12:10:03,689 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 12:10:03,699 - INFO - Loading faiss with AVX2 support.
+2025-06-16 12:10:03,864 - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-16 12:10:03,885 - INFO - Analysis completed successfully
+2025-06-16 12:10:03,905 - INFO - 127.0.0.1 - - [16/Jun/2025 12:10:03] "[35m[1mPOST /analyse HTTP/1.1[0m" 500 -
+2025-06-16 12:14:14,105 - INFO -  * Detected change in 'D:\\3rd year\\market-mate\\market-mate-backend\\app\\main.py', reloading
+2025-06-16 12:14:14,462 - INFO -  * Restarting with stat
+2025-06-16 12:14:18,398 - INFO - Starting Flask application
+2025-06-16 12:14:18,448 - WARNING -  * Debugger is active!
+2025-06-16 12:14:18,449 - INFO -  * Debugger PIN: 120-461-364
+2025-06-16 12:15:02,779 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-16 12:15:32,394 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 12:15:32,401 - INFO - Loading faiss with AVX2 support.
+2025-06-16 12:15:32,454 - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-16 12:15:32,466 - INFO - Analysis completed successfully
+2025-06-16 12:15:32,476 - INFO - 127.0.0.1 - - [16/Jun/2025 12:15:32] "[35m[1mPOST /analyse HTTP/1.1[0m" 500 -
+2025-06-16 12:16:19,003 - INFO - Received question: Summarise the resume
+2025-06-16 12:16:19,003 - ERROR - No file provided in request
+2025-06-16 12:16:19,008 - INFO - 127.0.0.1 - - [16/Jun/2025 12:16:19] "[31m[1mPOST /prompt HTTP/1.1[0m" 400 -
+2025-06-16 12:21:43,851 - INFO -  * Detected change in 'D:\\3rd year\\market-mate\\market-mate-backend\\app\\main.py', reloading
+2025-06-16 12:21:44,138 - INFO -  * Restarting with stat
+2025-06-16 12:21:47,664 - INFO - Starting Flask application
+2025-06-16 12:21:47,703 - WARNING -  * Debugger is active!
+2025-06-16 12:21:47,703 - INFO -  * Debugger PIN: 120-461-364
+2025-06-16 12:22:30,594 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-16 12:23:01,172 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 12:23:01,176 - INFO - Loading faiss with AVX2 support.
+2025-06-16 12:23:01,261 - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-16 12:23:01,279 - INFO - Analysis completed successfully
+2025-06-16 12:23:01,282 - INFO - 127.0.0.1 - - [16/Jun/2025 12:23:01] "POST /analyse HTTP/1.1" 200 -
+2025-06-16 12:23:48,938 - INFO - Received question: Summarise the resume
+2025-06-16 12:23:49,365 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 12:23:49,999 - INFO - Received question: Summarise the resume
+2025-06-16 12:23:52,748 - INFO - Received question: Summarise the resume
+2025-06-16 12:23:54,536 - INFO - Received question: Summarise the resume
+2025-06-16 12:24:15,345 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-16 12:24:15,616 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 12:24:16,028 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 12:24:16,502 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 12:24:23,444 - INFO - Received question: Summarise the resume
+2025-06-16 12:24:23,676 - INFO - Received question: Summarise the resume
+2025-06-16 12:24:44,037 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-16 12:25:39,590 - INFO - Analysis completed successfully
+2025-06-16 12:25:39,592 - INFO - 127.0.0.1 - - [16/Jun/2025 12:25:39] "POST /prompt HTTP/1.1" 200 -
+2025-06-16 12:25:39,872 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-16 12:25:39,917 - INFO - Received question: Summarise the resume
+2025-06-16 12:25:56,546 - INFO - Analysis completed successfully
+2025-06-16 12:25:56,555 - INFO - 127.0.0.1 - - [16/Jun/2025 12:25:56] "POST /prompt HTTP/1.1" 200 -
+2025-06-16 12:25:56,857 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-16 12:25:56,887 - INFO - Received question: Summarise the resume
+2025-06-16 12:26:42,090 - INFO - Starting Flask application
+2025-06-16 12:26:42,163 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.20.7:8000
+2025-06-16 12:26:42,170 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-16 12:26:42,176 - INFO -  * Restarting with stat
+2025-06-16 12:26:45,235 - INFO - Starting Flask application
+2025-06-16 12:26:45,279 - WARNING -  * Debugger is active!
+2025-06-16 12:26:45,279 - INFO -  * Debugger PIN: 120-461-364
+2025-06-16 12:27:08,943 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-16 12:27:38,440 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 12:27:38,440 - INFO - Loading faiss with AVX2 support.
+2025-06-16 12:27:38,480 - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-16 12:27:38,494 - INFO - Analysis completed successfully
+2025-06-16 12:27:38,494 - INFO - 127.0.0.1 - - [16/Jun/2025 12:27:38] "POST /analyse HTTP/1.1" 200 -
+2025-06-16 12:28:12,871 - INFO - Received question: Summarise the resume
+2025-06-16 12:28:13,375 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 12:28:13,576 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-16 12:28:48,547 - INFO - Analysis completed successfully
+2025-06-16 12:28:48,547 - INFO - 127.0.0.1 - - [16/Jun/2025 12:28:48] "POST /prompt HTTP/1.1" 200 -
+2025-06-16 12:32:49,508 - INFO - Received question: Summarise the resume
+2025-06-16 12:32:50,055 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 12:32:50,311 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-16 12:33:42,257 - INFO - Analysis completed successfully
+2025-06-16 12:33:42,260 - INFO - 127.0.0.1 - - [16/Jun/2025 12:33:42] "POST /prompt HTTP/1.1" 200 -
+2025-06-16 12:35:31,605 - INFO -  * Detected change in 'D:\\3rd year\\market-mate\\market-mate-backend\\app\\main.py', reloading
+2025-06-16 12:35:31,876 - INFO -  * Restarting with stat

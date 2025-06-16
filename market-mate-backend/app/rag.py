@@ -16,7 +16,7 @@ Context: {context}
 Answer: """
         self.prompt = ChatPromptTemplate.from_template(self.template)
 
-    def process_document(self, text, question):
+    def process_document(self, text):
         """
         Process a document and answer a question using RAG.
         
@@ -30,16 +30,18 @@ Answer: """
         # Split text into chunks
         text_splitter = RecursiveCharacterTextSplitter(
             chunk_size=1000,
-            chunk_overlap=200,
+            chunk_overlap=100,
             add_start_index=True
         )
         chunks = text_splitter.split_text(text)
 
         # Create FAISS vector store
-        vector_store = FAISS.from_texts(chunks, self.embeddings)
+        self.vector_store = FAISS.from_texts(chunks, self.embeddings)
+        
+        # # Retrieve relevant documents
+    def process_prompt(self,question):
 
-        # Retrieve relevant documents
-        docs = vector_store.similarity_search(question, k=3)
+        docs = self.vector_store.similarity_search(question, k=3)
         context = "\n\n".join([doc.page_content for doc in docs])
 
         # Generate answer using DeepSeek R1

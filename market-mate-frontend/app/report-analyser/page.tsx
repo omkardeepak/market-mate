@@ -17,6 +17,7 @@ export default function PdfAnalyzer() {
   const [file, setFile] = useState<File | null>(null)
   const [prompt, setPrompt] = useState("")
   const [isAnalyzing, setIsAnalyzing] = useState(false)
+  const [isAnalyzingprompt, setIsAnalyzingprompt] = useState(false)
   const [result, setResult] = useState<string | null>(null)
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -32,15 +33,15 @@ export default function PdfAnalyzer() {
 
 
 
-    const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
-  if (!file || !prompt) return;
+  if (!file) return;
 
   setIsAnalyzing(true);
 
   const formData = new FormData();
   formData.append("file", file);         // PDF file
-  formData.append("prompt", prompt);     // User's question
+
 
   try {
     const response = await fetch("http://localhost:8000/analyse", {
@@ -55,6 +56,32 @@ export default function PdfAnalyzer() {
     console.error("Error analyzing PDF:", error);
   } finally {
     setIsAnalyzing(false);
+  }
+};
+
+  const handlePrompt = async (e: React.FormEvent) => {
+  e.preventDefault();
+  if (!prompt) return;
+
+  setIsAnalyzingprompt(true);
+
+  const formData = new FormData();
+  formData.append("prompt", prompt);         // prompt
+
+
+  try {
+    const response = await fetch("http://localhost:8000/prompt", {
+      method: "POST",
+      body: formData,
+    });
+
+    const result = await response.json();
+    console.log(result);
+    // Use result.answer or result.content as needed
+  } catch (error) {
+    console.error("Error analyzing PDF:", error);
+  } finally {
+    setIsAnalyzingprompt(false);
   }
 };
 
@@ -113,8 +140,24 @@ export default function PdfAnalyzer() {
             )}
           </div>
         </div>
+        {/* Submit Button */}
+        <Button
+          type="submit"
+          className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium"
+          disabled={!file || isAnalyzing}
+        >
+          {isAnalyzing ? (
+            <>
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              Analyzing...
+            </>
+          ) : (
+            "Analyze PDF"
+          )}
+        </Button>
+      </form>
 
-        {/* Input Field */}
+      <form onSubmit={handlePrompt} className="space-y-6">
         <div className="space-y-2">
           <Label htmlFor="prompt" className="text-base font-medium">
             What would you like to know about this report?
@@ -127,12 +170,10 @@ export default function PdfAnalyzer() {
             className="w-full p-3"
           />
         </div>
-
-        {/* Submit Button */}
         <Button
           type="submit"
           className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium"
-          disabled={!file || !prompt || isAnalyzing}
+          disabled={!prompt || isAnalyzing}
         >
           {isAnalyzing ? (
             <>
