@@ -228,3 +228,96 @@
 2025-06-16 12:33:42,260 - INFO - 127.0.0.1 - - [16/Jun/2025 12:33:42] "POST /prompt HTTP/1.1" 200 -
 2025-06-16 12:35:31,605 - INFO -  * Detected change in 'D:\\3rd year\\market-mate\\market-mate-backend\\app\\main.py', reloading
 2025-06-16 12:35:31,876 - INFO -  * Restarting with stat
+2025-06-16 12:35:36,086 - INFO - Starting Flask application
+2025-06-16 12:35:36,112 - WARNING -  * Debugger is active!
+2025-06-16 12:35:36,114 - INFO -  * Debugger PIN: 120-461-364
+2025-06-16 12:35:36,852 - INFO - Received question: Summarise the resume
+2025-06-16 12:35:36,852 - ERROR - Error during analysis: 'RAGPipeline' object has no attribute 'vector_store'
+2025-06-16 12:35:36,856 - INFO - 127.0.0.1 - - [16/Jun/2025 12:35:36] "[35m[1mPOST /prompt HTTP/1.1[0m" 500 -
+2025-06-16 12:36:05,706 - INFO - Processing PDF: resume finall (1).pdf
+2025-06-16 12:36:34,245 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 12:36:34,245 - INFO - Loading faiss with AVX2 support.
+2025-06-16 12:36:34,311 - INFO - Successfully loaded faiss with AVX2 support.
+2025-06-16 12:36:34,338 - INFO - Analysis completed successfully
+2025-06-16 12:36:34,342 - INFO - 127.0.0.1 - - [16/Jun/2025 12:36:34] "POST /analyse HTTP/1.1" 200 -
+2025-06-16 12:36:41,387 - INFO - Received question: Summarise the resume
+2025-06-16 12:36:41,787 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 12:36:41,945 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-16 12:37:34,799 - INFO - Analysis completed successfully
+2025-06-16 12:37:34,799 - INFO - <think>
+Alright, let's tackle this problem. The question is asking me to summarize the resume of Omkar Deepak based on the provided context.
+
+First, I'll read through the context carefully. There are a few sections mentioned: LinkedIn profile, GitHub, email address, and the work experience. Then there's an academic section with two projects.
+
+Looking at the work experience first. The user is employed at YETI Racing in Kochi, India since December 2024 until now. They worked as a web developer and designer, using Next.js for the website. They designed interfaces with Figma, collaborating with team members to align the aesthetics with branding. Styled the website using Tailwind CSS, ensuring responsiveness across all pages. Implemented a crowdfunding feature.
+
+For academic projects, they built AI-based health diagnose for Jupyter and Hugging Face, trained the model, integrated NLP. Then ZUHI project used Hume API, Gemini, etc., answered admission-related questions, designed form generation system with React and Node.js, integrated OAuth and Firebase authentication.
+
+Education details at Cochin University of Science and Technology, B.Tech in IT from June 2023 to May 2027. Worked on tracking funding progress, cross-device testing, ensured consistency across platforms.
+
+Now, the user provided "EDUCATION" section but it's cut off. The rest is the academic projects and work experience. So the resume has these sections: LinkedIn, GitHub, email address, work experience, academic projects, education, etc., but not explicitly listed as a bullet point in the answer.
+
+The context doesn't mention anything about academic scores or grades, so I can only summarize the given information up to education.
+</think>
+
+**OMKAR DEEPAK**
+
+- **LinkedIn**: [omkardeepak444@gmail.com](mailto:omkardeepak444@gmail.com)  
+- **GitHub**: [omkardeepak444](https://github.com/omkardeepak444)  
+- **Email Address**: omkardeepak444@gmail.com  
+
+**Work Experience**  
+- YETI Racing, Kochi, India: CUSAT campus, December 2024-Present.  
+  - Web Developer/Designer (Next.js), created online presence, designed Figma interfaces, styled with Tailwind CSS, implemented crowdfunding feature.  
+
+**Academic Projects**  
+- AI-based Health Diagnose, Jupyter & Hugging Face, trained model, NLP integration, answered health-related questions, generated application forms via smart system.  
+- ZUHI (AI-Powered Admission Assistant), Hume API, Gemini, TTS, lightweight NLP models, designed form generator, handled conversational AI queries.  
+
+**Education**  
+- Cochin University of Science and Technology, Kochi, India: B.Tech in Information Technology, June 2023-May 2027.  
+
+This resume summarizes the key details of Omkar Deepak's professional experience and academic achievements based on the provided context.
+2025-06-16 12:37:34,799 - INFO - 127.0.0.1 - - [16/Jun/2025 12:37:34] "POST /prompt HTTP/1.1" 200 -
+2025-06-16 12:38:11,784 - INFO - Received question: what are the projects
+2025-06-16 12:38:12,182 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-06-16 12:38:33,508 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/generate "HTTP/1.1 200 OK"
+2025-06-16 12:39:14,617 - INFO - Analysis completed successfully
+2025-06-16 12:39:14,617 - INFO - <think>
+Okay, so I need to figure out how to answer the question "what are the projects" using the provided context. Let me go through the context step by step.
+
+First, I see that there's a section about Work Experience, specifically YETI Racing with Kochi, India starting from December 2024 until present. There are details about their website development in Figma and Tailwind CSS, but since the question is about projects, maybe those don't apply here.
+
+Next, under Academic Projects, there's a section for AI-based Health Diagnose. They built an AI model that can detect illnesses from user inputs. They used Jupyter and Hugging Face, which are tools often associated with machine learning. Then they integrated natural language processing, so I think this is another project in the context.
+
+Then there's ZUHI – AI Powered Admission Assistant, where they developed a system to help students apply for college using Hume API and Gemini. They also used NLP and TTS for conversational AI, so that seems like another academic project.
+
+Under Education, there'sNULL CLASS Remote Web Developer Intern from May 2024 to June 2024, working on building a job posting website. They used React for the frontend, Node.js Express for backend, and Firebase for authentication. That sounds like their technical project during an internship.
+
+So, compiling all these, the projects are:
+1. AI-based Health Diagnose
+2. ZUHI – AI powered Admission Assistant
+3. NULL CLASS Remote Web Development Intern
+4. NullClass Job Posting Website
+
+I should list each of these with a brief description so that the answer isn't in the context itself and follows the user's instructions.
+</think>
+
+Here are the projects listed under the provided context:
+
+1. **AI-based Health Diagnose**: A system developed to detect basic illnesses using AI, employing Jupyter and Hugging Face for training and NLP for natural language processing.
+
+2. **ZUHI – AI Powered Admission Assistant**: An AI-powered tool designed to streamline college admissions with features like Hume API integration and conversational AI support.
+
+3. **NULL CLASSRemote Web Developer Intern**: A web development role during an internship, focusing on job posting generation using React, Node.js Express, and Firebase for authentication and user experience.
+
+4. **NullClass Job Posting Website**: The technical project of a web developer intern working on building a website to post academic job opportunities.
+2025-06-16 12:39:14,623 - INFO - 127.0.0.1 - - [16/Jun/2025 12:39:14] "POST /prompt HTTP/1.1" 200 -
+2025-06-16 12:40:55,145 - INFO -  * Detected change in 'D:\\3rd year\\market-mate\\market-mate-backend\\app\\main.py', reloading
+2025-06-16 12:40:55,391 - INFO -  * Restarting with stat
+2025-06-16 12:40:59,424 - INFO - Starting Flask application
+2025-06-16 12:40:59,456 - WARNING -  * Debugger is active!
+2025-06-16 12:40:59,456 - INFO -  * Debugger PIN: 120-461-364
+2025-06-16 12:46:05,373 - INFO - Received question: what are the projects
+2025-06-16 12:46:05,373 - ERROR - Error during analysis: 'RAGPipeline' object has no attribute 'vector_store'
+2025-06-16 12:46:05,373 - INFO - 127.0.0.1 - - [16/Jun/2025 12:46:05] "[35m[1mPOST /prompt HTTP/1.1[0m" 500 -

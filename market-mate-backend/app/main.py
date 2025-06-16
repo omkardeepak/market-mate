@@ -40,12 +40,7 @@ def analyse():
         if not text.strip():
             logging.error("No text extracted from PDF")
             return jsonify({"error": "No text could be extracted from the PDF"}), 400
-
-        # Get the question from the request (default if not provided)
-        # question = request.form.get('prompt', 'What is the main topic of the document?')
-        # logging.info(f"Received question: {question}")
-
-        # Process the text and get the answer using RAG
+        
         rag_pipeline.process_document(text)
 
         logging.info("Analysis completed successfully")

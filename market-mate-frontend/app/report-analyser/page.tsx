@@ -149,7 +149,7 @@ export default function PdfAnalyzer() {
           {isAnalyzing ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              Analyzing...
+              Analyzing PDF...
             </>
           ) : (
             "Analyze PDF"
@@ -173,15 +173,15 @@ export default function PdfAnalyzer() {
         <Button
           type="submit"
           className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium"
-          disabled={!prompt || isAnalyzing}
+          disabled={!prompt || isAnalyzingprompt}
         >
-          {isAnalyzing ? (
+          {isAnalyzingprompt ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-              Analyzing...
+              Analyzing prompt...
             </>
           ) : (
-            "Analyze PDF"
+            "Analyze prompt"
           )}
         </Button>
       </form>
